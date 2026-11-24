@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sign-language-research"
+version = "0.1.0"
+description = "Reproducible PHOENIX-2014-T experiment preparation"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+phase2 = ["torch>=2.6", "numpy>=1.26", "opencv-python>=4.8", "PyYAML>=6"]
+text = ["fasttext>=0.9.2"]
+
+[project.scripts]
+sign-language = "sign_language.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

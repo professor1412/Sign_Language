@@ -1,0 +1,9 @@
+# Fresh CorrNet: one full clip per forward pass, eight clips per optimizer update.
+# This is a project dual-CTC recipe, not a reproduction of the full VAC recipe.
+epochs: 40
+learning_rate: 0.0001
+weight_decay: 0.0001
+accumulation_steps: 8
+gradient_clip: 5.0
+conv_ctc_weight: 1.0
+seed: 42

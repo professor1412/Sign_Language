@@ -1,0 +1,59 @@
+# Original PHOENIX dataset: leave it where it is; never commit 40 GB of data.
+/phoenix-2014-T.v3/
+
+# Python environments, generated caches, coverage, and build output.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Local configuration and secrets; only the safe example belongs in Git.
+.env
+.env.*
+!.env.example
+
+# Generated/large assets: retain scaffold directories through .gitkeep.
+/artifacts/**
+!/artifacts/**/
+!/artifacts/**/.gitkeep
+/runs/**
+!/runs/**/
+!/runs/**/.gitkeep
+/var/**
+!/var/**/
+!/var/**/.gitkeep
+/data/prepared/
+/data/processed/**
+!/data/processed/**/
+!/data/processed/**/.gitkeep
+/data/previews/**
+!/data/previews/**/
+!/data/previews/**/.gitkeep
+/data/text/embeddings/**
+!/data/text/embeddings/**/
+!/data/text/embeddings/**/.gitkeep
+
+# Generated evaluations can contain dataset glosses and local file paths.
+/reports/final/**
+!/reports/final/.gitkeep
+
+# Downloaded third-party source: review licenses and choose vendoring policy later.
+/external/**
+!/external/**/
+!/external/**/.gitkeep
+/external/corrnet/upstream/
+
+# OS/editor temporary files.
+Thumbs.db
+.DS_Store
+*.swp

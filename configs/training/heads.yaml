@@ -1,0 +1,15 @@
+# Phase 2 head A. One epoch means one pass through the training cache.
+epochs: 40
+batch_size: 8
+learning_rate: 0.001
+weight_decay: 0.001
+gradient_clip: 5.0
+seed: 42
+# Start with 0 on Windows. Increase only after measuring data-loading time.
+num_workers: 0
+model:
+  input_dim: 1024
+  width: 512
+  hidden_size: 256
+  layers: 2
+  dropout: 0.1

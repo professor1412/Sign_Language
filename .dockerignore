@@ -1,0 +1,20 @@
+# Keep large data, weights, runs, and secrets out of the container build context.
+phoenix-2014-T.v3/
+artifacts/
+data/
+runs/
+var/
+external/
+reports/
+notebooks/
+.git/
+.venv/
+venv/
+**/__pycache__/
+**/.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
